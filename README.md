@@ -31,7 +31,7 @@ initial Gemfile containing the following:
 
 And then execute:
 
-    $ bundle install --path vendor
+    bundle install --path vendor
 
 This will install the necessary gems in the `vendor` subdirectory
 instead of adding them to your standard set of Ruby gems,
@@ -41,9 +41,8 @@ You then need to populate the directory with the files that
 `jekyll-invoice` expects. The easiest way to do this is by copying
 the files from jekyll-invoice's `templates` directory:
 
-    $ d=`bundle show jekyll-invoice`
-    $ tar cf - -C $d/templates/base . | tar xf -
-    $ tar cf - -C $d/templates/uk . | tar xf -
+    d=`bundle show jekyll-invoice`
+    tar cf - -C $d/templates/base $d/templates/uk . | tar xf -
 
 This will create a site suitable for a UK-based company.
 If you localise the templates for your own territory,
@@ -55,25 +54,25 @@ process to some extent.
 
 The templates include a `Rakefile` that supports a basic workflow:
 
-    $ rake draft[big_biz]
+    rake draft[big_biz]
 
 will create a new invoice in `_drafts`, automatically giving it the
 next invoice number in sequence. You can pass a single argument to
 the `draft` task, which is the name of a customer in the
 `_data/customers.yml` file - `big_biz` in this case.
 
-    $ rake issue
+    rake issue
 
 will present a list of draft invoices. Select one by number and it
 will be moved into `_posts` and given the current date.
 
-    $ rake invoice[big_biz]
+    rake invoice[big_biz]
 
 Combines the two steps into one, creating a new invoice in `_posts`.
 
 ## Contributing
 
-1. Fork it ( http://github.com/mhw/jekyll-invoice/fork )
+1. Fork it [http://github.com/mhw/jekyll-invoice/fork](http://github.com/mhw/jekyll-invoice/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

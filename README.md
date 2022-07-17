@@ -41,7 +41,7 @@ You then need to populate the directory with the files that
 `jekyll-invoice` expects. The easiest way to do this is by copying
 the files from jekyll-invoice's `templates` directory:
 
-    d=`bundle show jekyll-invoice`
+    d=`bundle info jekyll-invoice --path`
     tar cf - -C $d/templates/base $d/templates/uk . | tar xf -
 
 This will create a site suitable for a UK-based company.

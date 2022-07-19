@@ -23,8 +23,8 @@
       {{ site.data.business.addresses | effective: 'registered' | fmt_address_with_postcode }}
     </p>
     <p>
-      Registered in England and Wales No. {{ site.data.business.company_number }}.
-      VAT Reg. No. {{ site.data.business.vat_number }}
+      Registered in {{ site.data.business.tax_region }} No. {{ site.data.business.company_number }}.
+      {{ site.data.business.default_tax }} Reg. No. {{ site.data.business.tax_number }}
     </p>
   </div>
  </body>

@@ -1,16 +1,15 @@
 name: My Consultancy Invoices
 markdown: kramdown
-highlighter: null
-encoding: utf-8
+highlighter: 'null'
+encoding: UTF-8
 excerpt_separator: ''
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
   - Rakefile
-gems:
+plugins:
   - jekyll-invoice
-default_tax: vat
 post:
   template: _templates/invoice.invoice
 editor: vi

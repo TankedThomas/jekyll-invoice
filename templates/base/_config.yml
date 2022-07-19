@@ -11,6 +11,6 @@ exclude:
 plugins:
   - jekyll-invoice
 post:
-  template: _templates/invoice.invoice
+  template: _templates/invoice.html
 editor: vi
 # htmltopdf: wkhtmltopdf

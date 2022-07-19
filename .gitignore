@@ -3,9 +3,13 @@
 .ruby-version
 .bundle
 .config
+.DS_Store
+.jekyll-metadata
+.sass-cache
 .yardoc
 Gemfile.lock
 InstalledFiles
+_site
 _yardoc
 coverage
 doc/

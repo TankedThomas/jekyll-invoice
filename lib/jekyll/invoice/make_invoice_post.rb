@@ -31,7 +31,7 @@ module Jekyll
 
       def make_invoice
         invoice = Jekyll::Invoice::Invoice.new(post.date.to_date)
-        if (tax_rate = site.config["default_tax"])
+        if (tax_rate = site.data.business["default_tax"])
           invoice.tax_type = tax_rate.to_sym
         end
         if (tax = site.data["tax"])

@@ -1,0 +1,30 @@
+name: My Consultancy
+company_number: '123 987 645'
+tax_number: '123 987 645'
+currency: '&dollar;'
+bank: 'ANZ'
+default_tax: 'GST'
+tax_region: 'New Zealand'
+account_number: 'xxxxxxxx'
+sort_code: 'xx-xx-xx'
+addresses:
+  -
+    start: 2022-04-22
+    end: 2029-03-02
+    registered:
+      - 9 Real Road
+      - Mount Eden
+      - Auckland
+      - 1234
+  -
+    start: 2022-03-03
+    registered:
+      - Accountancy House
+      - Summing Lane
+      - Wellington
+      - 5678
+    trading:
+      - Working Place
+      - Workington
+      - Christchurch
+      - 9010

@@ -42,7 +42,7 @@ You then need to populate the directory with the files that
 the files from jekyll-invoice's `templates` directory:
 
     d=`bundle info jekyll-invoice --path`
-    tar cf - -C $d/templates/base $d/templates/uk . | tar xf -
+    tar cf - -C $d/templates/base . | tar xf - && tar cf - -C $d/templates/uk . | tar xf -
 
 This will create a site suitable for a UK-based company.
 If you localise the templates for your own territory,

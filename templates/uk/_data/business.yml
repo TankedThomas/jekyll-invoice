@@ -5,7 +5,7 @@ currency: '&pound;'
 bank: 'HSBC'
 default_tax: 'VAT'
 tax_region: 'England and Wales'
-account_number: 0123456789
+account_number: 'xxxxxxxx'
 sort_code: 'xx-xx-xx'
 addresses:
   -

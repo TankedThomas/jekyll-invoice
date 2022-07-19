@@ -1,6 +1,12 @@
 name: My Consultancy
 company_number: '0432987'
-vat_number: 'GB 123 9876 45'
+tax_number: 'GB 123 9876 45'
+currency: '&pound;'
+bank: 'HSBC'
+default_tax: 'VAT'
+tax_region: 'England and Wales'
+account_number: 0123456789
+sort_code: 'xx-xx-xx'
 addresses:
   -
     start: 2002-04-22

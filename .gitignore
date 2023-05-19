@@ -4,6 +4,7 @@
 .bundle
 .config
 .DS_Store
+.jekyll-cache
 .jekyll-metadata
 .sass-cache
 .yardoc
